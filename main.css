@@ -1,5 +1,5 @@
 @font-face {
-    src: url("fonts/gillsansnovashadowed_medium.ttf");
+    src: url("fonts/gillsansnovashadowed_outln.ttf") format("truetype");
         font-family: 'Movement';
         font-style: normal;
         font-weight: normal;
@@ -59,12 +59,12 @@ background-color: rgb(183,31,47);
     font-family: "Lato", sans-serif;
     padding-left: 10px;
     padding-right: 10px;
-    color: rgb(71, 55, 123);
+    color: rgb(181, 181, 181);
     font-size: 22px;
 }
 .history-h4{
     padding-left: 7px;
-    color: rgb(71, 55, 123);
+    color: rgb(181,181,181);
     font-size: 25px;
 }
 .history-h1{
