@@ -13,12 +13,14 @@
     font-family: 'Movement';
 }
 /* how the page wrapper will appear on mobile */
-.page-wrapper{
-    /* where to change the "box" for history */
-    width: min(100% - 3rem, 80ch);
-    margin-inline: auto;
-}
+@media only screen and (max-width:800px){
+    body{
+        background-image: url("assets/logofavicon.svg");
+      
+    }
+    }
 /* how the page wrapper appears on desktop */
+
 
 @media only screen and (min-width:800px){
 .page-wrapper{
@@ -30,11 +32,11 @@
     "h a"
     "v v";
 }
-.logo{
+/* .logo{
     color: rgb(40, 24, 75);
     font-size: 50px;
     font-variation-settings: "wght" 500, "SPAC" 120;
-}
+} */
 
 .hero{
     display: flex;
@@ -48,7 +50,6 @@
     padding-bottom: 50px;
     height: 400px;
     width:100%;
-
 }
 
 #history {
@@ -106,7 +107,7 @@ background-color: rgb(183,31,47);
 
 h2{
     /* color: rgb(196, 39, 144); */
-    color: rgb(71, 55, 123);
+    color: rgb(123 18 38);;
     font-size: 50px;
     font-family: "Movement";
 }
