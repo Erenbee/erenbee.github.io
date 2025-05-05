@@ -250,7 +250,14 @@ footer{
         display: block;
     }
     .business-card-2{
-        width: 450px;
+        width: 350px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .business-card-graphic-design{
+        width: 350px;
         height: auto;
         margin: 20px auto;
         display: block;
