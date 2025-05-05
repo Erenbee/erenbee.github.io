@@ -264,3 +264,23 @@ footer{
         padding-bottom: 10px;
         padding-top: 10px;
     }
+    .dog-photo{
+        width: 550px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+    .biography-h2{
+        padding-left: 10px;
+        color: rgb(181, 181, 181);
+        font-size: 30px;
+    }
+
+    .biography-paragraph{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        color: rgb(181, 181, 181);
+        font-family: Lato, sans-serif;
+        line-height: 30px;
+    }
