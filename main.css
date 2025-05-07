@@ -291,3 +291,9 @@ footer{
         font-family: Lato, sans-serif;
         line-height: 30px;
     }
+    .polar-leaf-process{
+        width: 550px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
