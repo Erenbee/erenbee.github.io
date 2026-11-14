@@ -23,7 +23,7 @@
 
 
 @media only screen and (min-width:800px){
-.page-wrapper{
+/*.page-wrapper{
     display: grid;
     grid-gap: 2px;
     grid-template-columns: 1fr 1fr;
@@ -51,10 +51,52 @@
     height: 400px;
     width:100%;
 }
+.hero h2 {
+    color:black;
+    font-family: "Alfarn";
+}
+
+/* Container for the image scroll */
+
+ .page-layout {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%;
+    align-items: flex-start;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    scroll-snap-type: x mandatory; /* Snap scrolling */
+}
+
+.page {
+    display: flex;
+    justify-content: flex-start;
+    min-height: var(--viewport-height);
+}
+
+.page-content {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 1rem; /* Add spacing between images */
+}
+
+.page-content img {
+    flex-shrink: 0; /* Prevent images from shrinking */
+    width: 300px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    scroll-snap-align: start; /* Snap each image to the start */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.page-layout {
+    scroll-behavior: smooth;
+}
 
 #history {
 grid-area: h;
-background-color: rgb(183,31,47);
+background-color: rgb(229 93 135);
 margin-left: 30px;
 margin-right: 50px;
 margin-bottom: 20px;
@@ -62,24 +104,25 @@ padding-bottom: 10px;
 padding-top: 10px;
 }
 .history-paragraph{
-    font-family: "Lato", sans-serif;
+    font-family: "Noto serif";
     padding-left: 10px;
     padding-right: 10px;
-    color: rgb(181, 181, 181);
+    color: rgb(0, 0, 0);
     font-size: 22px;
 }
 .history-h4{
     padding-left: 7px;
-    color: rgb(181,181,181);
+    color: rgb(0, 0, 0);
     font-size: 25px;
+    font-family: Alfarn;
 }
 .history-h1{
     padding-left: 7px;
-    color: rgb(71, 55, 123);
+    color: rgb(0, 0, 0);
 }
 
 .business-card{
-    width: 450px;
+    width: 400px;
     height: auto;
     margin: 20px auto;
     display: block;
@@ -87,7 +130,7 @@ padding-top: 10px;
 
 #alphabet {
 grid-area: a;
-background-color: rgb(183,31,47);
+background-color: rgb(229 93 135);
 margin-left: 50px;
 margin-right: 90px;
 margin-bottom: 20px;
@@ -96,22 +139,22 @@ padding-top: 10px;
 }
 .alphabet-h2{
     padding-left: 10px;
-    color: rgb(181, 181, 181);
-    
+    color: rgb(0, 0, 0);
+    font-family: Alfarn;
 }
 .alphabet-paragraph-1{
     padding-left: 10px;
     padding-right: 10px;
     font-size: 30px;
-    color: rgb(181, 181, 181);
-    font-family: Lato, sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: "Noto serif";
 }
 }
 .kingart{
-    width: 750px;
+    width: 650px;
     height: auto;
     margin: 20px auto;
-    display: block;
+    display: inline-block;
 }
 /* variation-header */
 
@@ -147,7 +190,7 @@ h6{
 .lato-text{
     font-family: "Lato", sans-serif;
     font-size: 70px;
-    color: rgb(7, 81, 68);
+    color: rgb(0, 0, 0);
 
 }
 /* variable font that changes on hover */
@@ -204,23 +247,24 @@ h6{
 
 /* CSS for the footer */
 footer{
-    background-color: rgb(153 152 151);
+    background-color: rgb(135, 211, 237);
     height: 175px;
 }
 .footer-paragraph{
-    font-family: "Movement";
+    font-family: "Alfarn";
     padding-left: 20px;
     padding-right: 10px;
     /* padding-bottom: 5px; */
-    color:  rgb(123 18 38);
+    color:  rgb(0, 0, 0);
     font-size: 20px;}
 
     .instagram-hover{
         position: relative;
-        color: rgb(123 18 38);
+        color: rgb(0, 0, 0);
         transition: color 0.3s;
         padding-left: 20px;
         padding-bottom: 20px;
+        font-family: "alfarn";
     }
 
     .instagram-hover::before{
@@ -228,9 +272,9 @@ footer{
         position: absolute;
         width: 86%;
         height: 3px;
-        bottom: 24px;
-        left: 20px;
-        background-color:  rgb(157, 24, 48);
+        bottom: 20px;
+        left: 19.8px;
+        background-color:  rgb(229 93 135);
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.3s ease-in-out 0s;
