@@ -6,7 +6,7 @@
         }
     
     body{
-    background-image: url("assets/red-black-gradient.gif");
+    background: linear-gradient(135deg, rgb(229 93 135), rgb(95 195 228));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
